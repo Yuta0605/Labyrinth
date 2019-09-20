@@ -6,14 +6,14 @@ public class ReversingDoor : MonoBehaviour
 {
     BoxCollider coll;
     public GameObject lightObject;//ライト用オブジェクト
-    public ligthActive Light;//ライト判定用
+    public lightActive Light;//ライト判定用
     bool pastLight;
 
     // Start is called before the first frame update
     void Start()
     {
         coll = GetComponent<BoxCollider>();
-        Light = lightObject.GetComponent<ligthActive>();//ライトを取得
+        Light = lightObject.GetComponent<lightActive>();//ライトを取得
     }
 
     // Update is called once per frame

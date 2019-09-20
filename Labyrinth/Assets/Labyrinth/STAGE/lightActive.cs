@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ligthActive : MonoBehaviour
+public class lightActive : MonoBehaviour
 {
     GameObject flash;
     Light light;
@@ -39,13 +39,13 @@ public class ligthActive : MonoBehaviour
         {
             //flash.SetActive(false);
             isLightFlag = false;
-            light.enabled = false;
+            //light.enabled = false;
         }
         else
         {
             //flash.SetActive(true);
             isLightFlag = true;
-            light.enabled = true;
+            //light.enabled = true;
         }
     }
 
