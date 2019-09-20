@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class ligthActive : MonoBehaviour
 {
-    GameObject flash ;
+    GameObject flash;
     Light light;
 
     GameObject player;
     playerState pState;
 
-    bool isLightFlag;//ライトの状態
+    bool isLightFlag;
 
     // Start is called before the first frame update
     void Start()
@@ -53,5 +53,4 @@ public class ligthActive : MonoBehaviour
     {
         return isLightFlag;
     }
-
 }
