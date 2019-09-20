@@ -25,7 +25,6 @@ public class playerState : MonoBehaviour
         if (Input.GetKeyDown("z"))
         {
             playerLightingFlag = !playerLightingFlag;
-            Debug.Log("aaa");
         }
     }
 
