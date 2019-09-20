@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class ligthActive : MonoBehaviour
 {
-    GameObject flash ;
+    GameObject flash;
     Light light;
 
     GameObject player;
     playerState pState;
+
+    bool isLightFlag;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,8 @@ public class ligthActive : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player");
         pState = player.GetComponent<playerState>();
+
+        isLightFlag = true;
     }
 
     // Update is called once per frame
@@ -34,12 +38,19 @@ public class ligthActive : MonoBehaviour
         if (!pState.getLighting())
         {
             //flash.SetActive(false);
+            isLightFlag = false;
             light.enabled = false;
         }
         else
         {
             //flash.SetActive(true);
+            isLightFlag = true;
             light.enabled = true;
         }
+    }
+
+    public bool getLightFlag()
+    {
+        return isLightFlag;
     }
 }
